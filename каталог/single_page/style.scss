@@ -6,16 +6,6 @@
 $colorText: #f16d7f;
 $backgroundCardText: #ffffff;
 
-%font-card-basik {
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
-    color: #222222;
-}
-
 body {
     width: 1600px;
     display: flex;
@@ -27,7 +17,7 @@ a {
     text-decoration: none;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,25 +125,27 @@ a {
     border-style: none;
 }
 
-.menu{
+.menu {
     height: 51px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    &_nav1{
+
+    &_nav1 {
         display: flex;
         flex-direction: row;
         gap: 100px;
         list-style-type: none;
-    }  
+    }
 }
-.menu_list{
+
+.menu_list {
     position: relative;
 }
 
 
-.mega-box{
+.mega-box {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 5px;
@@ -165,38 +157,43 @@ a {
     z-index: 1;
 }
 
-.mega-box::before{
+.mega-box::before {
     content: "";
     display: block;
     width: 10px;
     height: 10px;
     background-color: #ffffff;
     position: absolute;
-    top:-6px;
+    top: -6px;
     left: 33px;
     transform: rotate(45grad);
     border-top: 1px solid #e8e8e8;
     border-left: 1px solid #e8e8e8;
 }
-.menu_list:hover .mega-box{
+
+.menu_list:hover .mega-box {
     display: flex;
 }
-.last:hover .mega-box{
+
+.last:hover .mega-box {
     right: 0;
     left: auto;
 }
-.last:hover .mega-box::before{
+
+.last:hover .mega-box::before {
     right: 28px;
     left: auto;
 }
 
-.menu_item{
+.menu_item {
     margin-right: 46px;
 }
-.menu_item:last-of-type{
+
+.menu_item:last-of-type {
     margin-right: 0;
 }
-.menu_hedding{
+
+.menu_hedding {
     font-size: 14px;
     line-height: 32px;
     font-weight: 400;
@@ -206,7 +203,8 @@ a {
     width: 235px;
     border-bottom: 1px solid #e8e8e8;
 }
-.mega_link{
+
+.mega_link {
     display: block;
     font-size: 14px;
     line-height: 28px;
@@ -214,9 +212,11 @@ a {
     letter-spacing: 0.025em;
     color: #646464;
 }
-.mega_link:hover{
+
+.mega_link:hover {
     color: $colorText;
 }
+
 .link_menu {
     font-size: 14px;
     line-height: 26px;
@@ -225,286 +225,241 @@ a {
     color: #222222;
 }
 
-.top_content {
-    margin-bottom: 100px;
-}
-
-.img_frame {
-    position: relative;
-}
-
-.text1 {
-    position: absolute;
-    top: 416px;
-    left: 174px;
+.nav_arrival {
     display: flex;
-    gap: 25px;
-}
-
-.rectangle {
-    height: 122px;
-    width: 12px;
-    position: absolute;
-    top: 24px;
-    right: 544px;
-}
-
-.text {
-    font-size: 60px;
-    line-height: 1.2;
-    font-weight: 900;
-    letter-spacing: 0.025em;
-    color: #222222;
-    gap: 10px;
-
-    .luxerious {
-        font-size: 40px;
-    }
-
-    .fashion {
-        font-size: 40px;
-        color: $colorText;
-    }
-}
-
-.grid {
-    display: grid;
-    grid-template: 1fr 1fr 1fr/1fr 1fr;
-    gap: 25px;
-
-    .for3 {
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        display: flex;
-        justify-content: right;
-
-        .h_grid3 {
-            position: absolute;
-            top: 1567px;
-            left: 221px;
-            background: $backgroundCardText;
-            @extend %font-card-basik;
-
-            .h1_grid {
-                font-size: 30px;
-                color: $colorText;
-            }
-        }
-    }
-
-    .for4 {
-        grid-column-start: 2;
-        grid-row: -1/-3;
-        display: flex;
-
-        .h_grid4 {
-            position: absolute;
-            top: 1277px;
-            left: 813px;
-            background: $backgroundCardText;
-            @extend %font-card-basik;
-
-            .h1_grid {
-                font-size: 30px;
-                color: $colorText;
-            }
-        }
-    }
-
-    .for1 {
-        grid-row: 1/3;
-        display: flex;
-        justify-content: right;
-
-        .h_grid1 {
-            position: absolute;
-            top: 987px;
-            left: 221px;
-            background: $backgroundCardText;
-            @extend %font-card-basik;
-
-            .h1_grid {
-                font-size: 30px;
-                color: $colorText;
-            }
-        }
-    }
-
-    .for2 {
-        display: flex;
-        .h_grid2 {
-            position: absolute;
-            top: 987px;
-            background: $backgroundCardText;
-            @extend %font-card-basik;
-
-            .h1_grid {
-                font-size: 30px;
-                color: $colorText;
-            }
-        }
-    }
-}
-
-
-.card {
-    position: relative;
-    width: 72%;
-}
-
-.fetured_items {
-    display: flex;
-    margin-top: 120px;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    height: 148px;
+    background-color: #f8f3f4;
     align-items: center;
-    margin-bottom: 70px;
 }
 
-.fetured {
-    font-size: 30px;
-    line-height: 54px;
-    font-weight: 700;
-    letter-spacing: 0.025em;
-    color: #222222;
-}
-
-.shop {
-    font-size: 14px;
-    line-height: 54px;
-    font-weight: 400;
-    letter-spacing: 0.025em;
-    color: #9f9f9f;
-}
-
-.price {
-    display: grid;
-    grid-template: 1fr 1fr /1fr 1fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 70px;
-}
-
-.head_item {
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #222222;
-}
-
-.price_item {
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: 700;
+.text_arrival {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
     text-transform: uppercase;
     color: $colorText;
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.links1_arrival {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #636363;
+
+    &_page {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        color: $colorText
+    }
 }
 
-.browse_but {
-    display: flex;
-    justify-content: center;
+.links1_arrival:hover {
+    color: $colorText;
 }
 
-.browse {
-    width: 212px;
-    height: 48px;
-    font-size: 16px;
-    line-height: 54px;
-    font-weight: 700;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-    background-color: $colorText;
-    border-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+.top_sp {
+    width: 100%;
+    background-color: #f7f7f7;
 }
 
-.offer {
+.card_moschino {
+    display: block;
+    width: 1141px;
+    height: 730px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
     position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    bottom: 48px;
+    margin: auto;
+    padding-top: 70px;
 }
 
-.delivery {
-    display: flex;
+.card_text1 {
     flex-direction: column;
-    gap: 60px;
-    align-items: center;
-    justify-content: center;
-    background-color: #222224;
-    width: 30%;
-    height: 589px;
+    gap: 40px;
 }
 
-.block {
-    display: flex;
-    gap: 30px;
-    padding: 30px;
-}
-
-.text4 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.free_delivery {
-    font-size: 20px;
-    line-height: 1.2;
+.collection {
+    font-size: 14px;
+    line-height: 24px;
     font-weight: 700;
-    letter-spacing: 0.025em;
-    color: #fbfbfb;
+    color: $colorText;
 }
 
-.worldwide {
+.mos {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+}
+
+.card_par1 {
+    display: flex;
+    text-align: center;
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
-    letter-spacing: 0.025em;
-    color: #fbfbfb;
+    color: #5e5e5e;
 }
 
-.text7 {
-    position: absolute;
-    left: 230px;
-    top: 120px;
+.material {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #b9b9b9;
+
 }
 
-.text_offer {
-    font-size: 53.7px;
+.cot {
+    color: #2f2f2f;
+}
+
+.price_card {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: $colorText;
+    padding: 40px;
+    padding: 40px 284px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.card_input {
+    display: flex;
+    gap: 40px;
+}
+
+.choose {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2f2f2f;
+}
+
+.add {
+    width: 537px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
     line-height: 1.2;
     font-weight: 700;
-    letter-spacing: 0.025em;
-    color: #ffffff;
-
-    .text_pink {
-        color: $colorText;
-    }
-
-    .for_women {
-        font-size: 32.2px;
-    }
+    color: $colorText;
+    background-color: #ffffff;
+    border: 1px solid #ef5b70
 }
+
+.add_to {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+
+}
+
+.add_basket {
+    width: 26px;
+    height: 24px;
+}
+
+.you_may {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.card_item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    left: calc(50% - 570px);
+    width: 1140px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.item_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+
+.img1 {
+    position: absolute;
+    top: 0px
+}
+.img2{
+    position: relative;
+    bottom: 3px;
+}
+
+.bg {
+    z-index: 1;
+    position: relative;
+    bottom: 4px;
+}
+.par3{
+    position: absolute;
+    top:288px;
+}
+.top{
+    position: absolute;
+    bottom: 48px;
+}
+.leg{
+    position: absolute;
+    top: 288px;
+}
+.two{
+    position: absolute;
+    top:6px;
+}
+
+.one {
+    position: relative;
+    bottom: 10px;
+}
+.par1{
+    display: flex;
+    flex-direction: column;
+}
+.text1{
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #6f6e6e;
+}
+.text-price{
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $colorText
+}
+
 
 .subscribe {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 223.3px;
     padding: 97px 230px 126px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/Layer\ 41.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/Layer\ 41.png);
     background-size: 100%;
     margin-bottom: 50px;
 }
@@ -618,7 +573,8 @@ a {
     gap: 100px;
     justify-content: center;
 }
-.paragraph_nav{
+
+.paragraph_nav {
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
@@ -628,24 +584,28 @@ a {
     display: flex;
     flex-direction: column;
 }
-.brand_menu{
+
+.brand_menu {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
-.head_nav1{
+
+.head_nav1 {
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
     letter-spacing: 0.025em;
     color: $colorText
 }
-.nav_link{
+
+.nav_link {
     display: flex;
     flex-direction: column;
-    gap:12px
+    gap: 12px
 }
-.href_nav{
+
+.href_nav {
     font-size: 16px;
     line-height: 59px;
     font-weight: 400;
@@ -653,19 +613,24 @@ a {
     color: #898989;
 }
 
+.href_nav:hover {
+    color: $colorText;
+}
 
-.footer{
+.footer {
     background: #e6e6e6;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 24px 0px;
 }
-.icon_fot{
+
+.icon_fot {
     display: flex;
     gap: 7.3px;
 }
-.par_fot{
+
+.par_fot {
     font-size: 16px;
     line-height: 42px;
     font-weight: 400;
