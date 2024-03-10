@@ -384,6 +384,8 @@ a {
     grid-template: 1fr 1fr /1fr 1fr 1fr 1fr;
     gap: 40px;
     margin-bottom: 70px;
+    width: 72%;
+    margin-left: 227px;
 }
 
 .head_item {
@@ -392,6 +394,7 @@ a {
     font-weight: 400;
     text-transform: uppercase;
     color: #222222;
+    margin-bottom: 17px;
 }
 
 .price_item {
@@ -407,8 +410,49 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-
+.img_item{
+    width: 100%;
+}
+.text3{
+    padding: 20px;
+}
+.item:hover{
+    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
+}
+.item:hover .img_item{
+    filter: brightness(30%);
+    transition: 2s;
+}
+.add{
+    display: flex;
+    border: 1px solid #ffffff;
+    padding: 10px;
+    align-items: center;
+    /*pointer-events: all;*/
+}
+.add_txt{
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+}
+.img_cart{
+    margin-right: 10px;
+}
+.add_to{
+    position: absolute;
+    top: 98px;
+    /*pointer-events: none;*/
+    display: none;
+}
+.add:hover{
+    box-shadow: 0px 0px 10px 0px #ffffff;
+}
+.item:hover .add_to{
+    display: flex;
+}
 .browse_but {
     display: flex;
     justify-content: center;
@@ -671,4 +715,8 @@ a {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #7a7a7a
+}
+.ic_f:hover path{
+    fill: #FF6A6A;
+    stroke: #FBFBFB;   
 }
