@@ -212,7 +212,86 @@ a {
     right: 86px;
     z-index: 1;
 }
-
+.box_kids{
+    width: 43px;
+    height: 3px;
+    background-color: #ef5b70;
+    position: absolute;
+    top: 55px;
+    right: 13px;
+    display: none;
+}
+.box_acosserie{
+    width: 99px;
+    height: 3px;
+    background-color: #ef5b70;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    display: none;
+}
+.mega-box_kids::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 43px;
+    left: 244px;
+    transform: rotate(45grad);
+    border-top: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+.mega-box_acosserie::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 43px;
+    left: 244px;
+    transform: rotate(45grad);
+    border-top: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+.mega-box_kids {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: -17px;
+    right: 57px;
+    z-index: 1;
+}
+.mega-box_acosserie {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: -16px;
+    right: 116px;
+    z-index: 1;
+}
+.menu_list:hover .mega-box_kids {
+    display: flex;
+}
+.menu_list:hover .mega-box_acosserie {
+    display: flex;
+}
+.menu_list:hover .box_kids {
+    display: block;
+}
+.menu_list:hover .box_acosserie{
+    display: block;
+}
 .menu_item_women {
     display: flex;
     flex-direction: column;
@@ -867,6 +946,10 @@ a {
     margin-right: 42px;
 }
 .proceed_btn:hover{
+    background-color: $backgroundCardText;
+    color: $colorText;
+}
+.my_account:hover{
     background-color: $backgroundCardText;
     color: $colorText;
 }
