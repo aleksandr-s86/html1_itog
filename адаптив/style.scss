@@ -1112,6 +1112,7 @@ details[open]>.det::after {
 
 .from_blog {
     margin-top: 60px;
+    margin-bottom: 57px;
 }
 
 .head-but {
@@ -1136,4 +1137,69 @@ details[open]>.det::after {
         transform: rotate(199grad);
         width: 5px;
     }
+}
+.img1{
+    width: 205px;
+    height: 150px;
+    background-color: #cccccc;
+}
+.img2{
+    width: 205px;
+    height: 150px;
+    background-color: #cccccc;
+}
+.img_from{
+    display: flex;
+    justify-content: space-between;
+}
+.pellentesque{
+    font-family: Cousine;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #999999;
+    margin-top: 20px;
+}
+.head-quik{
+    font-family: Cousine;
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #b6b6b6;
+}
+.message{
+    margin-top: 60px;
+}
+.cont_mes{
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+   
+}
+.inp{
+    width: 215px;
+    height: 30px;
+    background-color: rgba(42,42,42,0.0);
+    border: 1px solid #666666;
+    &__mes{
+        width: 215px;
+        height: 127px;
+        background-color: rgba(42,42,42,0.0);
+        border: 1px solid #666666;
+    }
+}
+.send_msg{
+    font-family: 'Merriweather Sans';
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #aeaeae;
 }
