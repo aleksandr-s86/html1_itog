@@ -1457,3 +1457,93 @@ details[open]>.det::after {
     text-align: center;
     margin-top: 16px;
 }
+.information{
+    margin-top: 89px;
+}
+.head_ul{
+    font-family: Cousine;
+    font-size: 17px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #b6b6b6;
+    margin-bottom: 15px;
+}
+.info_ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type:none ;
+}
+.hr_ul1{
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #888888;
+}
+.my_acc{
+    margin-top: 120px;
+}
+.head_myacc{
+    font-family: Cousine;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b6b6b6;
+    margin-bottom: 14px;
+}
+.hr_myacc{
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #888888;
+}
+.customer{
+    margin-top: 121px;
+}
+.hr_cust{
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 31px;
+    font-weight: 400;
+    color: #888888;
+}
+.contact_ul{
+    margin-top: 118px;
+}
+.hr_ul{
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 31px;
+    font-weight: 400;
+    color: #888888;
+}
+.hr_ul1:hover{
+    color:#cf4647;
+}
+.hr_myacc:hover{
+    color:#cf4647;
+}
+.hr_cust:hover{
+    color: #cf4647;
+}
+.pay_footer{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    gap: 245px;
+    align-items: center;
+    padding-top: 37px;
+}
+.pay_system{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.res-fot{
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #666666;
+}
