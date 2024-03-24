@@ -398,7 +398,7 @@ details[open] > .det::after {
 
 .content {
   display: grid;
-  grid-template: 1.72fr 1fr 1fr/repeat(3, 1fr);
+  grid-template: 1.7fr 1fr 1fr/repeat(3, 1fr);
   gap: 30px;
 }
 .content .block1 {
