@@ -1539,6 +1539,7 @@ details[open]>.det::after {
     display: flex;
     flex-direction: column;
     gap: 9px;
+    margin-right: 238px;
 }
 .res-fot{
     font-family: Arial;
@@ -1546,4 +1547,75 @@ details[open]>.det::after {
     line-height: 18px;
     font-weight: 400;
     color: #666666;
+}
+
+.icon_fot{
+    display: flex;
+    gap: 5px;
+}
+.facebk{
+    border: 2px solid #999999;
+    padding: 10px 16px 12px 15px;
+}
+.twit{
+    border: 2px solid #999999;
+    padding: 11px 13px 11px 14px;
+}
+.wifi{
+    border: 2px solid #999999;
+    padding: 11px;
+}
+.cube{
+    border: 2px solid #999999;
+    padding: 12px 12px 11px 11px;
+}
+.in{
+    border: 2px solid #999999;
+    padding: 11px 11px 12px 11px;
+}
+.point{
+    border: 2px solid #999999;
+    padding: 16px 11px 16px 12px;
+}
+.skype{
+    border: 2px solid #999999;
+    padding: 11px 10px 10px 11px;
+}
+.gmail{
+    border: 2px solid #999999;
+    padding: 13px 10px 13px 11px;
+}
+.up{
+    border: 2px solid #999999;
+    border-radius: 100%;
+    padding: 18px 14px 17px 14px;
+}
+.roll_up{
+    background-color: #1f1f1f;
+    border-style: none;
+}
+
+.facebk:hover{
+    background-color: #3b5a9a;
+}
+.twit:hover{
+    background-color: #67b5d3;
+}
+.wifi:hover{
+    background-color: #e78c2f;
+}
+.cube:hover{
+    background-color: #3b5a9a;
+}
+.in:hover{
+    background-color: #4975b6;
+}
+.point:hover{
+    background-color: #b6457a;
+}
+.skype:hover{
+    background-color: #3da5cc;
+}
+.gmail:hover{
+    background-color: #dd4b4b;
 }
