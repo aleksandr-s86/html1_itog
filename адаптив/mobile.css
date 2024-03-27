@@ -1,10 +1,11 @@
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 320px) {
   .container {
     max-width: 1050px;
     width: 90%;
     margin: auto;
   }
   .navbar {
+    display: flex;
     width: 100%;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
   }
@@ -464,6 +465,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 66px;
+    margin-bottom: 83px;
   }
   .t {
     /*&__bl1-hover{
@@ -663,6 +665,8 @@
     color: #ffffff;
   }
   .content-mob {
+    display: block;
+    width: 100vw;
     padding: 28px 7px 30px 8px;
     border: 1px solid rgba(255, 255, 255, 0.29);
   }
@@ -671,6 +675,7 @@
     justify-content: center;
     align-items: baseline;
     gap: 4px;
+    margin-bottom: 13px;
   }
   .everyone {
     font-family: "Roboto Condensed";
@@ -698,7 +703,7 @@
   }
   .grey_bg {
     width: 100vw;
-    height: 1753px;
+    height: 1884px;
     background-color: #f3f3f3;
     position: relative;
   }
@@ -748,7 +753,7 @@
     color: #cf4647;
     border: 3px solid #cf4647;
     padding: 5px;
-    margin-right: 171px;
+    margin-right: 218px;
   }
   .square {
     display: flex;
@@ -790,6 +795,11 @@
   }
   .about_us {
     margin-bottom: 40px;
+  }
+  .black_bcg {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: flex-end;
   }
   .fengo-shop {
     margin-top: 50px;
@@ -978,6 +988,7 @@
   }
   .twitter {
     margin-top: 80px;
+    margin-left: 10px;
   }
   .logo_fot {
     display: flex;
@@ -1016,6 +1027,7 @@
   }
   .promokit {
     margin-top: 50px;
+    margin-left: 10px;
   }
   .head_but__fav {
     display: flex;
@@ -1112,6 +1124,8 @@
   }
   .pay_system {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 8px;
     margin-right: 0;
@@ -1119,11 +1133,13 @@
   .about {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    padding-left: 20px;
+    padding-left: 14px;
   }
   .tab_fot-pay {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .res-fot {
     font-family: Arial;
@@ -1139,5 +1155,31 @@
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(6, 1fr);
     gap: 0;
+  }
+  .style-fot {
+    width: 100%;
+  }
+  .head-but {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 89px;
+  }
+  .fsb-text {
+    margin-left: 10px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  .reserved {
+    position: relative;
+    top: 112px;
+  }
+  .fot {
+    right: 108px;
+    position: relative;
   }
 }/*# sourceMappingURL=mobile.css.map */
