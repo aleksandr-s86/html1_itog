@@ -1642,4 +1642,8 @@ details[open] > .det::after {
 
 .tab_fot-pay {
   display: flex;
+}
+
+.navbar {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
